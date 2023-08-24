@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+}
+details > summary {
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none
+}
+details[open] summary > div {
+    transform: rotate(180deg);
+    top: 10px;
+}
+p, summary{
+    padding: 10px;
+}
+details{
+    font-size: 18px;
+    max-width: 700px;
+    margin: 10% auto;
+    border-radius: 10px;    
+}
+summary{
+    background-color: rgb(198, 196, 194);
+    position: relative;
+}
+p{
+    background-color: rgb(135, 135, 135);
+    margin: 0;
+}
+.icon{
+    font-size: 28px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+
+
+/* https://www.eddymens.com/blog/how-to-remove-the-arrow-from-the-html-details-tag */
+/* https://www.htmlsymbols.xyz/unicode/U+2304 */
