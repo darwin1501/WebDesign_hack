@@ -4,11 +4,15 @@ body{
 details > summary {
     list-style: none;
 }
+details > summary > div {
+    transition: transform 0.5s;
+}
 summary::-webkit-details-marker {
     display: none
 }
 details[open] summary > div {
-    transform: rotate(180deg);
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
     top: 10px;
 }
 p, summary{
@@ -18,7 +22,7 @@ details{
     font-size: 18px;
     max-width: 700px;
     margin: 10% auto;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 summary{
     background-color: rgb(198, 196, 194);
@@ -33,9 +37,13 @@ p{
     position: absolute;
     top: 0px;
     right: 10px;
+    
 }
 
+/* solution */
+/* https://codepen.io/jgustavoas/pen/rNQyxWa?editors=1100 */
 
 
 /* https://www.eddymens.com/blog/how-to-remove-the-arrow-from-the-html-details-tag */
 /* https://www.htmlsymbols.xyz/unicode/U+2304 */
+/* https://codepen.io/jgustavoas/pen/zYLNKbN */
