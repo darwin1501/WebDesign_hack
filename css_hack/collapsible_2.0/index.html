@@ -1,108 +1,18 @@
 <!doctype html>
-
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>CSS Accordion</title>
-
-<style>
-body{
-    font-family: sans-serif;
-}
-
-input {
-    display: none;
-}
-
-label {
-    display: block;    
-    padding: 8px 22px;
-    margin: 0 0 1px 0;
-    cursor: pointer;
-    background: #7092d5;
-    border-radius: 3px;
-    color: #FFF;
-    transition: ease .5s;
-}
-
-label:hover {
-    background: #607db7;
-}
-
-.content {
-    background: #E2E5F6;
-    padding: 10px 25px;
-    border: 1px solid #b5cdfb;
-    margin: 0 0 1px 0;
-    border-radius: 3px;
-}
-
-input + label + .content {
-	opacity: 0;
-	height: 0;
-	font-size: 0;
-	padding: 0 25px;
-	transition: ease .5s;
-}
-
-input:checked + label + .content {
-	opacity: 1;
-	height: 120px;
-	font-size: 14px;
-	padding: 10px 25px;
-}
-
-label{
-    position: relative;
-    font-size: 36px;
-}
-label > div {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 36px;
-    transition: transform 0.5s;
-}
-
-input:checked + label > div{
-    transform-origin: center center;
-    transform: rotateX(180deg) translate(0, -13px);
-}
-
-
-/* https://supfort.com/css-accordion-animation */
-
-/* design  */
-/* https://webflow.com/made-in-webflow/website/Free-FAQ-Section-Template */
-</style>
-
+    <meta charset="utf-8">
+    <title>CSS Accordion</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-
-<input type="checkbox" id="title1" />
-<label for="title1">More Info <div>&#8964;</div></label>
-
-<div class="content">
-    <p>I'm a Collapsible without Javascript</p>
-</div>
-
-<input type="checkbox" id="title2" />
-<label for="title2">More Info <div>&#8964;</div></label>
-
-<div class="content">
-    <p>I'm a Collapsible without Javascript</p>
-</div>
-
-<input type="checkbox" id="title3" />
-<label for="title3">More Info <div>&#8964;</div></label>
-
-<div class="content">
-    <p>I'm a Collapsible without Javascript</p>
-</div>
-
-
+    <input type="checkbox" id="title1" />
+    <label for="title1">More Info <div>&#8964;</div></label>
+    <div class="content">
+        <p>I'm a Collapsible without Javascript</p>
+    </div>
 </body>
 
 </html>
