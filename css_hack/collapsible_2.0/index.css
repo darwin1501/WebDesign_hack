@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-color:#E2E5F6
 }
 
 input {
@@ -11,26 +12,27 @@ label {
     padding: 8px 22px;
     margin: 0 0 1px 0;
     cursor: pointer;
-    background: #7092d5;
-    border-radius: 3px;
-    color: #FFF;
+    background:#fff;
+    border-radius: 10px;
     transition: ease .5s;
 }
 
-label:hover {
-    background: #607db7;
+.accordion{
+    box-shadow: 2px 4px 10px 1px rgb(197, 196, 196);
+    border-radius: 10px;
+    background-color: white;;
 }
 
 .content {
-    background: #E2E5F6;
+    background: #fff;
     padding: 10px 25px;
-    border: 1px solid #b5cdfb;
-    margin: 0 0 1px 0;
+    margin: -10px 0 1px 0;
     border-radius: 3px;
+    z-index: 10;
+    border-radius: 0 0 10px 10px;    
 }
 
-input+label+.content {
-    opacity: 0;
+input+label+.content {  
     height: 0;
     font-size: 0;
     padding: 0 25px;
@@ -38,18 +40,25 @@ input+label+.content {
 }
 
 input:checked+label+.content {
-    opacity: 1;
     height: 120px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px 25px;
+    color: rgb(72, 70, 70);
+}
+
+input:checked + label{
+    color: rgb(51, 51, 234);
 }
 
 label {
     position: relative;
-    font-size: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
 }
 
-label>div {
+label > div {
+    color: black !important;
     position: absolute;
     top: 0;
     right: 10px;
