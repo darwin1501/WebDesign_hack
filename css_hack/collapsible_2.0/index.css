@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color:#E2E5F6
+    background-color: #f8f8f8
 }
 
 input {
@@ -9,7 +9,6 @@ input {
 
 label {
     display: block;
-    padding: 8px 22px;
     margin-bottom: 1px;
     cursor: pointer;
     background:#fff;
@@ -25,7 +24,6 @@ label {
 
 .content {
     background: #fff;
-    padding: 10px 25px;
     margin: -10px 0 1px 0;
     border-radius: 3px;
     z-index: 10;
@@ -54,14 +52,14 @@ label {
     position: relative;
     font-size: 20px;
     font-weight: bold;
-    padding: 20px;
+    padding: 25px;
 }
 
 label > div {
     color: black !important;
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: 8px;
+    right: 20px;
     font-size: 36px;
     transition: transform 0.5s;
 }
